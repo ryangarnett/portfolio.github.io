@@ -1,0 +1,332 @@
+/* @FONTFACE */
+@font-face {
+    font-family: 'berlinsansroman';
+    src: url('../fonts/berlinsans-roman-webfont.eot');
+    src: url('../fonts/berlinsans-roman-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/berlinsans-roman-webfont.woff2') format('woff2'),
+         url('../fonts/berlinsans-roman-webfont.woff') format('woff'),
+         url('../fonts/berlinsans-roman-webfont.ttf') format('truetype'),
+         url('../fonts/berlinsans-roman-webfont.svg#berlinsansroman') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/* END @FONTFACE */
+
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+}
+ol {
+	padding-left: 1.4em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.4em;
+	list-style: square;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+  color: white;
+}
+/* end reset browser styles */
+
+
+/* apply natural box-model */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* end natural box-model */
+
+/* micro clear-fix - apply to contain floats */
+.clear:after {
+  content: " ";
+  display: table;
+  clear: both;
+}
+/* micro clear-fix - apply to contain floats */
+
+/* GLOBAL STYLES */
+#wrapper {
+	/*background-color: #ECF0F1;*/
+	width:1200px;
+	margin: 0 auto; /* TB - RL - centering wrapper */
+}
+
+h1 {
+	font-size: 22px;
+	color: black;
+	font-family: 'berlinsansroman';
+}
+
+h2 {
+	font-size: 18px;
+	color: black;
+	margin-bottom: 2px;
+	font-family: 'berlinsansroman';
+}
+
+h3 {
+	font-size: 16px;
+	color: black;
+	margin-bottom: 2px;
+	font-family: 'berlinsansroman';
+}
+
+h4 {
+	font-size: 16px;
+	font-style: italic;
+	color: black;
+	margin-bottom: 2px;
+	font-family: 'berlinsansroman';
+}
+
+p {
+	font-size: 18px;
+	color: white;
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
+#title::first-letter {
+	font-size: 60px;
+}
+
+#title {
+	margin-top: 20px;
+	margin-left: 40px;
+	font-size: 36px;
+	color: white;
+}
+
+
+a:hover, a:visited, a:link, a:active {
+  color: #ECF0F1;
+  text-decoration: none;
+}
+
+/* END GLOBAL STYLES */
+
+
+/* HEADER STYLE - Used the sample from week 5 fixed position and sticky header/nav. Customized */
+  header {
+    height: 175px;
+    min-width: 500px;
+    background-color: #2C3E50;
+    position:fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+nav {
+	box-sizing: border-box;
+	height: 50px;
+	width: 100%;
+	font-size: 16px;
+	font-family: 'berlinsansroman';
+	line-height: 50px;
+	text-align: center;
+	background-color: #2980B9;
+	position: absolute;
+	bottom:0;
+}
+
+nav li {
+	display: inline-block;
+	margin-right: 20px;
+	list-style-type: none;
+  color: white;
+  font-size: 24px;
+}
+
+
+
+nav a:hover {
+  color: black;
+}
+/* END HEADER STYLE */
+
+
+/* HOME STYLES */
+
+.portfolioStory {
+  padding-left: 2%;
+  padding-top: 2%;
+  padding-right: 2%;
+  padding-bottom: 2%;
+  width: 1120px;
+	margin-top: 200px;
+	margin-left: 50px;
+	margin-right: 5px;
+	margin-bottom: 50px;
+  background-color: orange;
+  height: auto;
+  overflow: hidden;
+	float: left;
+}
+
+.stories {
+  width: 1120px;
+	margin-left: 50px;
+	margin-right: 5px;
+	margin-bottom: 50px;
+  height: auto;
+  overflow: hidden;
+	float: left;
+}
+
+.project {
+  margin-bottom: 40px;
+  font-size: 24px;
+  color: white;
+  float: left;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  vertical-align: text-bottom;
+}
+
+.rightText {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 24px;
+  color: white;
+  float: left;
+  width: 80%;
+  height: 200px;
+  background-color: #E74C3C;
+  border-radius: 25px;
+  text-align: justify;
+  vertical-align: text-bottom;
+}
+
+.leftText {
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 24px;
+  color: white;
+  float: left;
+  width: 80%;
+  height: 200px;
+  background-color: #E74C3C;
+  border-radius: 25px;
+  text-align: justify;
+  vertical-align: text-bottom;
+}
+
+.rightImg {
+  float: left;
+  width: 20%;
+  border-radius: 25px;
+  height: 200px;
+}
+
+.leftImg {
+  float: left;
+  width: 20%;
+  border-radius: 25px;
+  height: 200px;
+}
+
+.projImage {
+  border-radius: 25px;
+}
+
+/* END HOME STYLES */
+
+
+/* BINGE STYLES */
+.binge-media {
+	/*padding-left: 10px;
+  padding-right: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;*/
+	float: left;
+	/*background-color: blue;*/
+	margin-top: 200px;
+	margin-left: 50px;
+	margin-right: 5px;
+	margin-bottom: 50px;
+  width: 1120px;
+}
+
+.binge {
+  padding-top: 80px;
+  margin-left: 240px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font-size: 24px;
+  float: left;
+  width: 200px;
+  height: 200px;
+  background-color: #E74C3C;
+  border-radius: 25px;
+  text-align: center;
+  vertical-align: text-bottom;
+  text-decoration: none;
+}
+
+
+/*.channels:first-child {
+  margin-left: 50px;
+}
+
+.channels:nth-child(n+2) {
+  margin-left: 10px;
+}*/
+
+/* END BINGE STYLES */
+
+
+/* START FOOTER STYLE */
+
+footer {
+  height: 100px;
+  width: 100%;
+  background: #3498DB;
+  color: white;
+  text-align: center;
+  position: relative;
+  bottom:0;
+}
+
+footer ul {
+  padding: 0px;
+  margin: 0;
+}
+
+footer li {
+  display: inline-block;
+  padding: 40px;
+}
+
+footer li a {
+  color: white;
+}
+
+footer a:hover {
+  color: black;
+}
+/* END FOOTER STYLE */
