@@ -40,7 +40,7 @@ ul {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
-  color: white;
+  color: #EEEBE0;
 }
 /* end reset browser styles */
 
@@ -70,49 +70,19 @@ html {
 	margin: 0 auto; /* TB - RL - centering wrapper */
 }
 
-h1 {
-	font-size: 22px;
-	color: black;
-	font-family: 'berlinsansroman';
-}
-
-h2 {
-	font-size: 18px;
-	color: black;
-	margin-bottom: 2px;
-	font-family: 'berlinsansroman';
-}
-
-h3 {
-	font-size: 16px;
-	color: black;
-	margin-bottom: 2px;
-	font-family: 'berlinsansroman';
-}
-
-h4 {
-	font-size: 16px;
-	font-style: italic;
-	color: black;
-	margin-bottom: 2px;
-	font-family: 'berlinsansroman';
-}
-
 p {
 	font-size: 18px;
-	color: white;
+	color: #EEEBE0;
 	font-family: 'PT Sans Narrow', sans-serif;
-}
-
-#title::first-letter {
-	font-size: 60px;
 }
 
 #title {
 	margin-top: 20px;
 	margin-left: 40px;
-	font-size: 36px;
-	color: white;
+	font-size: 48px;
+	color: #EEEBE0;
+  font-family: 'berlinsansroman';
+  text-align: center;
 }
 
 
@@ -128,7 +98,7 @@ a:hover, a:visited, a:link, a:active {
   header {
     height: 175px;
     min-width: 500px;
-    background-color: #2C3E50;
+    background-color: #223F5E;
     position:fixed;
     width: 100%;
     top: 0;
@@ -144,7 +114,7 @@ nav {
 	font-family: 'berlinsansroman';
 	line-height: 50px;
 	text-align: center;
-	background-color: #2980B9;
+	background-color: #405B7D;
 	position: absolute;
 	bottom:0;
 }
@@ -153,7 +123,7 @@ nav li {
 	display: inline-block;
 	margin-right: 20px;
 	list-style-type: none;
-  color: white;
+  color: #EEEBE0;
   font-size: 24px;
 }
 
@@ -168,6 +138,7 @@ nav a:hover {
 /* HOME STYLES */
 
 .portfolioStory {
+  color: #223F5E;
   padding-left: 2%;
   padding-top: 2%;
   padding-right: 2%;
@@ -177,10 +148,16 @@ nav a:hover {
 	margin-left: 50px;
 	margin-right: 5px;
 	margin-bottom: 50px;
-  background-color: orange;
+
   height: auto;
   overflow: hidden;
 	float: left;
+}
+
+.pStoryText {
+  color: #223F5E;
+  font-size: 28px;
+  font-family: 'PT Sans Narrow', sans-serif;
 }
 
 .stories {
@@ -196,7 +173,6 @@ nav a:hover {
 .project {
   margin-bottom: 40px;
   font-size: 24px;
-  color: white;
   float: left;
   width: 100%;
   height: auto;
@@ -210,11 +186,10 @@ nav a:hover {
   padding-left: 1%;
   padding-right: 1%;
   font-size: 24px;
-  color: white;
   float: left;
   width: 80%;
   height: 200px;
-  background-color: #E74C3C;
+  background-color: #849DB5;
   border-radius: 25px;
   text-align: justify;
   vertical-align: text-bottom;
@@ -226,11 +201,10 @@ nav a:hover {
   padding-left: 1%;
   padding-right: 1%;
   font-size: 24px;
-  color: white;
   float: left;
   width: 80%;
   height: 200px;
-  background-color: #E74C3C;
+  background-color: #849DB5;
   border-radius: 25px;
   text-align: justify;
   vertical-align: text-bottom;
@@ -257,37 +231,6 @@ nav a:hover {
 /* END HOME STYLES */
 
 
-/* BINGE STYLES */
-.binge-media {
-	/*padding-left: 10px;
-  padding-right: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;*/
-	float: left;
-	/*background-color: blue;*/
-	margin-top: 200px;
-	margin-left: 50px;
-	margin-right: 5px;
-	margin-bottom: 50px;
-  width: 1120px;
-}
-
-.binge {
-  padding-top: 80px;
-  margin-left: 240px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  font-size: 24px;
-  float: left;
-  width: 200px;
-  height: 200px;
-  background-color: #E74C3C;
-  border-radius: 25px;
-  text-align: center;
-  vertical-align: text-bottom;
-  text-decoration: none;
-}
-
 
 /*.channels:first-child {
   margin-left: 50px;
@@ -305,7 +248,7 @@ nav a:hover {
 footer {
   height: 100px;
   width: 100%;
-  background: #3498DB;
+  background: #223F5E;
   color: white;
   text-align: center;
   position: relative;
